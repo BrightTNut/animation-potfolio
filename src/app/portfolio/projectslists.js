@@ -73,7 +73,7 @@ export const projects = [
     date: "Mar 22024",
     description:
       "Generator GIFS as per user mention words using API call.It Simple and beautifully design for every users.Tech use lie React Js,Tailwind",
-    image: RandomGif,
+    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/RandomGif.png",
     tags: ["React Js", "Express Js", "Tailwind Css", "API", "GIF"],
     category: "web app",
     github: "https://github.com/BrightTNut/randomgifs",
