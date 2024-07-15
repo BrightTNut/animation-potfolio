@@ -13,7 +13,7 @@ export const projects = [
     description:
       "I'm developing an NFT marketplace using an API, enabling users to easily create, trade, and purchase unique digital assets as NFTs. The API integration ensures secure authentication, seamless minting of NFTs through blockchain, and smooth user transactions. This project aims to simplify the NFT experience for artists and collectors, fostering a vibrant ecosystem of digital ownership and creativity.",
 
-    image: NFTIMG,
+    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/nft.png",
     tags: [
       "Javascript",
       "AWS",
@@ -35,7 +35,7 @@ export const projects = [
     date: "March 2024",
     description:
       "Implemented captivating animations and immersive 3D graphics in React.js using GSAP and Three.js, enhancing user experience..",
-    image: Iphone,
+    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/iphone15.png",
     tags: ["React Js", "GSAP", "Three.js", "javascript"],
     category: "web app",
     github: "https://github.com/BrightTNut/APPLE",
@@ -55,7 +55,7 @@ export const projects = [
     date: "April 2024",
     description:
       "Designed and developed the Todo Web page, a web page Operate Each user personal task . Implemented key features such as task tracking, task updatation, and task tracking.Beat part is Authontication using Firebase also Use of Database integaration of Firebasr Firestore. The plan is to add a user friendly Todo App using Google authontication which make it simple to use.",
-    image: TodoFirebase,
+    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/todofirebase.png",
     tags: [
       "Next Js",
       "Firebase Authontication",
@@ -85,7 +85,7 @@ export const projects = [
     date: "June 2024",
     description:
       "This project combines my passion for blockchain with a practical, real-world application. Whether you're a crypto enthusiast or simply love your daily caffeine fix, Buy Coffee for Me brings a refreshing twist to how we transact online.",
-    image: Coffee,
+    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/coffee.png",
     tags: [
       "Hardhat v2.22.5",
       "NextJs 14",
