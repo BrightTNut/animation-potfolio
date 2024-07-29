@@ -1,11 +1,25 @@
-import {
-  NFTIMG,
-  TodoFirebase,
-  Iphone,
-  RandomGif,
-  Coffee,
-} from "../images/index";
+
 export const projects = [
+   {
+    id: 8,
+    title: "Polygon Amoy , web3 Chat Application",
+    date: "July 2024",
+    description:
+      "Developed a state-of-the-art Web3 chat application deployed on the Polygon Amoy testnet. The application ensures secure communication through blockchain technology, utilizing Polygon Amoy tokens for registration and messaging",
+
+    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/Screenshot%202024-07-29%20134329.png",
+    tags: [
+      "Polygon Amoy testnet",
+      "Next.js (v14.2.4)", "React (v18.3.1)", "React-DOM (v18.3.1)", "TailwindCSS (v3.4.1)", "PostCSS (v8)","Ethers.js (v6.13.1)", "Web3Modal (v1.9.12)"
+,"Hardhat (v2.22.5)"
+ 
+      "Javascript",
+     
+    ],
+    category: "Blockchain application",
+    github: "https://github.com/BrightTNut/chatapp",
+    webapp: "https://chatapp-git-all-done-basic-level-brighttnuts-projects.vercel.app/",
+  },
   {
     id: 9,
     title: "NFT-market-place-using-api",
