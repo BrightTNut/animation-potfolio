@@ -11,7 +11,7 @@ export const projects = [
     tags: [
       "Polygon Amoy testnet",
       "Next.js (v14.2.4)", "React (v18.3.1)", "React-DOM (v18.3.1)", "TailwindCSS (v3.4.1)", "PostCSS (v8)","Ethers.js (v6.13.1)", "Web3Modal (v1.9.12)"
-,"Hardhat (v2.22.5)"
+,"Hardhat (v2.22.5)",
  
       "Javascript",
      
