@@ -17,10 +17,10 @@ const ContactPage = () => {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        "service_hj8s1go",
+        "template_zl3b4n2",
         form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
+        "sD6gBccxnCKp6IhsE"
       )
       .then(
         () => {

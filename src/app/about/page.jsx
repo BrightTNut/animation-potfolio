@@ -199,20 +199,23 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Blockchain Content Writer Intern
+                    Web Development Intern
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    Gained blockchain insights, wrote blogs, and worked on an
-                    NFT marketplace, staying updated and continuously learning.{" "}
+                    Developed a business digital card-generating website using
+                    Laravel 11 with MVC architecture and MySQL for efficient
+                    data management. Engineered dynamic forms with secure MySQL
+                    storage for user profiles and media, ensuring responsive
+                    design across all devices.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    OCT 2023 - JAN 2024
+                    1 AUG 2024 – 1 JAN 2025
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Trade Dog
+                    Webdroid Edutech LLP, Nagpur
                   </div>
                 </div>
                 {/* CENTER */}
@@ -227,36 +230,32 @@ const AboutPage = () => {
                 <div className="w-1/3 "></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              {/* <div className="flex justify-between h-48">
-               
+              <div className="flex justify-between h-48">
                 <div className="w-1/3 "></div>
-     
+
                 <div className="w-1/6 flex justify-center">
-             
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
-                
+
                 <div className="w-1/3 ">
-             
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                    Blockchain Content Writer Intern
                   </div>
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
+                    Gained blockchain insights, wrote blogs, and worked on an
+                    NFT marketplace, staying updated and continuously learning..{" "}
                   </div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
+                    OCT 2023 - JAN 2024{" "}
                   </div>
-              
+
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
+                    Trade Dog
                   </div>
                 </div>
-              </div> */}
+              </div>
               {/* EXPERIENCE LIST ITEM */}
               {/* <div className="flex justify-between h-48">
            
