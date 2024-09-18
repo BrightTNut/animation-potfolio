@@ -4,33 +4,34 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
-  const text = "Say Hello";
-
+  const [status, setStatus] = useState({
+    success: false,
+    error: false,
+    loading: false,
+  });
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    setError(false);
-    setSuccess(false);
+    setStatus({ success: false, error: false, loading: true });
 
-    emailjs
-      .sendForm(
-        "service_hj8s1go",
-        "template_zl3b4n2",
+    const formData = new FormData(form.current); // FormData instance for sending form data
+    console.log("Form Data:", Object.fromEntries(formData)); // Log form data to debug
+
+    try {
+      const result = await emailjs.sendForm(
+        "service_a04jg38", // Your EmailJS Service ID
+        "template_npoiuds", // Your EmailJS Template ID
         form.current,
-        "sD6gBccxnCKp6IhsE"
-      )
-      .then(
-        () => {
-          setSuccess(true);
-          form.current.reset();
-        },
-        () => {
-          setError(true);
-        }
+        "sD6gBccxnCKp6IhsE" // Your User ID
       );
+      console.log("EmailJS Response:", result); // Log the response for debugging
+      setStatus({ success: true, error: false, loading: false });
+      form.current.reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error); // Log the error
+      setStatus({ success: false, error: true, loading: false });
+    }
   };
 
   return (
@@ -44,7 +45,7 @@ const ContactPage = () => {
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
           <div>
-            {text.split("").map((letter, index) => (
+            {"Say Hello".split("").map((letter, index) => (
               <motion.span
                 key={index}
                 initial={{ opacity: 1 }}
@@ -72,25 +73,32 @@ const ContactPage = () => {
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
+            placeholder="Write your message..."
+            required
           />
-          <span>My mail address is:</span>
+          <span>Your mail address:</span>
           <input
             name="user_email"
-            type="text"
+            type="email"
             className="bg-transparent border-b-2 border-b-black outline-none"
+            placeholder="example@example.com"
+            required
           />
           <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
-            Send
+          <button
+            className="bg-purple-200 rounded font-semibold text-gray-600 p-4"
+            disabled={status.loading}
+          >
+            {status.loading ? "Sending..." : "Send"}
           </button>
-          {success && (
+          {status.success && (
             <span className="text-green-600 font-semibold">
               Your message has been sent successfully!
             </span>
           )}
-          {error && (
+          {status.error && (
             <span className="text-red-600 font-semibold">
-              Something went wrong!
+              Something went wrong! Please try again.
             </span>
           )}
         </form>
