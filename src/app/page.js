@@ -48,7 +48,9 @@ const Homepage = () => {
               </Link>
             </button>
             <button className="p-4 rounded-lg ring-1 ring-black">
+             <Link href="https://drive.google.com/file/d/1u7Lsg8YWOjtTmx3bD5FNZOQzCNYjxjzs/view?usp=sharing">
               Contact Me
+                  </Link>
             </button>
           </div>
         </div>
