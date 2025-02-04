@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import dotenv from "dotenv";
+require("dotenv").config();
 
 const ContactPage = () => {
   const [status, setStatus] = useState({
@@ -9,25 +11,35 @@ const ContactPage = () => {
     error: false,
     loading: false,
   });
-  const form = useRef();
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const sendEmail = async (e) => {
     e.preventDefault();
-    setStatus({ success: false, error: false, loading: true });
 
-    const formData = new FormData(form.current); // FormData instance for sending form data
-    console.log("Form Data:", Object.fromEntries(formData)); // Log form data to debug
-
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Tejas Shiwankar",
+      message: message,
+    };
     try {
-      const result = await emailjs.sendForm(
-        "service_a04jg38", // Your EmailJS Service ID
-        "template_npoiuds", // Your EmailJS Template ID
-        form.current,
-        "sD6gBccxnCKp6IhsE" // Your User ID
-      );
-      console.log("EmailJS Response:", result); // Log the response for debugging
+      emailjs
+        .send(
+          "service_hhxnweg",
+          "template_npoiuds",
+          templateParams,
+          "sD6gBccxnCKp6IhsE"
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
       setStatus({ success: true, error: false, loading: false });
-      form.current.reset();
     } catch (error) {
       console.error("EmailJS Error:", error); // Log the error
       setStatus({ success: false, error: true, loading: false });
@@ -65,20 +77,33 @@ const ContactPage = () => {
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
-          ref={form}
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
           <span>Dear Tejas Shiwankar,</span>
           <textarea
-            rows={6}
+            rows={3}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             placeholder="Write your message..."
+            required
+          />{" "}
+          <span>Your Name:</span>
+          <input
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            type="name"
+            className="bg-transparent border-b-2 border-b-black outline-none"
+            placeholder="example@example.com"
             required
           />
           <span>Your mail address:</span>
           <input
             name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             type="email"
             className="bg-transparent border-b-2 border-b-black outline-none"
             placeholder="example@example.com"

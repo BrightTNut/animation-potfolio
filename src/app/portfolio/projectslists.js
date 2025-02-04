@@ -1,47 +1,94 @@
-
 export const projects = [
-   {
+  {
     id: 8,
     title: "Polygon Amoy , web3 Chat Application",
     date: "July 2024",
     description:
       "Developed a state-of-the-art Web3 chat application deployed on the Polygon Amoy testnet. The application ensures secure communication through blockchain technology, utilizing Polygon Amoy tokens for registration and messaging",
 
-    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/Screenshot%202024-07-29%20134329.png",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/main/Screenshot%202024-07-29%20134329.png",
     tags: [
       "Polygon Amoy testnet",
-      "Next.js (v14.2.4)", "React (v18.3.1)", "React-DOM (v18.3.1)", "TailwindCSS (v3.4.1)", "PostCSS (v8)","Ethers.js (v6.13.1)", "Web3Modal (v1.9.12)"
-,"Hardhat (v2.22.5)",
- 
+      "Next.js (v14.2.4)",
+      "React (v18.3.1)",
+      "React-DOM (v18.3.1)",
+      "TailwindCSS (v3.4.1)",
+      "PostCSS (v8)",
+      "Ethers.js (v6.13.1)",
+      "Web3Modal (v1.9.12)",
+      "Hardhat (v2.22.5)",
+
       "Javascript",
-     
     ],
     category: "Blockchain application",
     github: "https://github.com/BrightTNut/chatapp",
-    webapp: "https://chatapp-git-all-done-basic-level-brighttnuts-projects.vercel.app/",
+    webapp:
+      "https://chatapp-git-all-done-basic-level-brighttnuts-projects.vercel.app/",
   },
   {
-    id: 9,
-    title: "NFT-market-place-using-api",
-    date: "Jun 2023 - Aug 2023",
+    id: 0,
+    title: "Study Notion EdTech Platform",
+    date: "January 2025",
     description:
-      "I'm developing an NFT marketplace using an API, enabling users to easily create, trade, and purchase unique digital assets as NFTs. The API integration ensures secure authentication, seamless minting of NFTs through blockchain, and smooth user transactions. This project aims to simplify the NFT experience for artists and collectors, fostering a vibrant ecosystem of digital ownership and creativity.",
-
-    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/nft.png",
+      "Developed a client-server architecture-based platform with a dynamic front-end, robust back-end, and secure database integration to enhance e-learning experiences.",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/refs/heads/main/Screenshot%202025-02-04%20231509.png",
     tags: [
-      "Javascript",
-      "AWS",
-      "Eslint",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Next Js",
-      "Express Js",
-      "Redux",
+      "ReactJs",
+      "ExpressJs",
+      "Razopay",
+      "Cloudinary",
+      "Mongoose",
+      "nodemailer",
     ],
+    category: "web app",
+    github: "https://github.com/BrightTNut/studynotion-backend",
+    webapp: "https://github.com/BrightTNut/studynotion-backend",
+    member: [
+      {
+        name: "Tejas Shiwankar",
+
+        linkedin: "https://www.linkedin.com/in/tejas-shiwankar-099b8021b/",
+        github: "https://github.com/BrightTNut/",
+      },
+    ],
+  },
+  {
+    id: 0,
+    title: "Tauri Notes Rust",
+    date: "OCT 2024",
+    description:
+      "Rust Base Notes taking Software which is fast and easy to use and have scalable",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/refs/heads/main/Screenshot%202025-02-04%20233109.png",
+    tags: ["Rust", "Tauri"],
     category: "Blockchain application",
-    github: "https://github.com/BrightTNut/NFT-market-place-using-api",
-    webapp: "https://live-nft-marketplace.netlify.app/",
+    github: "https://github.com/BrightTNut/Tauri-Notes-Rust",
+    webapp: "https://tauri-notes-rust.vercel.app/",
+    member: [
+      {
+        name: "Tejas Shiwankar",
+
+        linkedin: "https://www.linkedin.com/in/tejas-shiwankar-099b8021b/",
+        github: "https://github.com/BrightTNut/",
+      },
+    ],
+  },
+  {
+    id: 10,
+    title: "Live Cryptocurrency Data Chart",
+    date: "Sep 2024",
+    description:
+      "Secure messaging application deployed on Polygon Amoy, using Polygon tokens for transactions.",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/refs/heads/main/Screenshot%202025-02-04%20231827.png",
+    tags: ["Python", "CoinGeko Api"],
+    category: "Blockchain application",
+    github:
+      "https://github.com/BrightTNut/excel-sheet-of-crypto-currency/tree/main/excel",
+    webapp:
+      "https://github.com/BrightTNut/excel-sheet-of-crypto-currency/tree/main/excel",
   },
   {
     id: 0,
@@ -49,7 +96,8 @@ export const projects = [
     date: "March 2024",
     description:
       "Implemented captivating animations and immersive 3D graphics in React.js using GSAP and Three.js, enhancing user experience..",
-    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/iphone15.png",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/main/iphone15.png",
     tags: ["React Js", "GSAP", "Three.js", "javascript"],
     category: "web app",
     github: "https://github.com/BrightTNut/APPLE",
@@ -65,21 +113,16 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Todo App Using Firbase Authontication & Database",
-    date: "April 2024",
+    title: "Profit First Income Calculator Desktop",
+    date: "Sep 2024",
     description:
-      "Designed and developed the Todo Web page, a web page Operate Each user personal task . Implemented key features such as task tracking, task updatation, and task tracking.Beat part is Authontication using Firebase also Use of Database integaration of Firebasr Firestore. The plan is to add a user friendly Todo App using Google authontication which make it simple to use.",
-    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/todofirebase.png",
-    tags: [
-      "Next Js",
-      "Firebase Authontication",
-      "Firebase Firstore Database",
-      "Node Js",
-      "Tailwind",
-    ],
-    category: "web app",
-    github: "https://github.com/BrightTNut/MYTODO",
-    webapp: "https://mytodo-two-rose.vercel.app/",
+      "Developed a customizable desktop calculator using Rust and Slint, implementing the Profit First methodology income breakdown with a clean and user- friendly interface.",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/refs/heads/main/Screenshot%202025-02-04%20232436.png",
+    tags: ["Rust", "SLint"],
+    category: "Blockchain application",
+    github: "https://github.com/BrightTNut/income-cal",
+    webapp: "https://github.com/BrightTNut/income-cal",
   },
   {
     id: 2,
@@ -87,7 +130,8 @@ export const projects = [
     date: "Mar 22024",
     description:
       "Generator GIFS as per user mention words using API call.It Simple and beautifully design for every users.Tech use lie React Js,Tailwind",
-    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/RandomGif.png",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/main/RandomGif.png",
     tags: ["React Js", "Express Js", "Tailwind Css", "API", "GIF"],
     category: "web app",
     github: "https://github.com/BrightTNut/randomgifs",
@@ -99,7 +143,8 @@ export const projects = [
     date: "June 2024",
     description:
       "This project combines my passion for blockchain with a practical, real-world application. Whether you're a crypto enthusiast or simply love your daily caffeine fix, Buy Coffee for Me brings a refreshing twist to how we transact online.",
-    image: "https://raw.githubusercontent.com/BrightTNut/assets/main/coffee.png",
+    image:
+      "https://raw.githubusercontent.com/BrightTNut/assets/main/coffee.png",
     tags: [
       "Hardhat v2.22.5",
       "NextJs 14",
