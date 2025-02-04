@@ -43,7 +43,7 @@ const Homepage = () => {
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
             <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-              <Link href="https://drive.google.com/file/d/1TGBVH7MnW3UvZP18AiAr6GyINuLeJUHE/view?usp=sharing">
+              <Link href="https://drive.google.com/file/d/1u7Lsg8YWOjtTmx3bD5FNZOQzCNYjxjzs/view?usp=sharing">
                 Check Resume
               </Link>
             </button>
